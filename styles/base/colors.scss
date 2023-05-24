@@ -1,0 +1,28 @@
+:root {
+  --color-golden-1: #F0E6D2;
+  --color-golden-2: #C8AA6E;;
+  --color-golden-3: #C89B3C;
+  --color-golden-4: #42331A;
+  --color-golden-5: #463714;
+  --color-golden-6: #32281E;
+  --color-gray-1: #3C3C41;
+  --color-gray-2: #1E2328;
+  --color-gray-3: #5B5A56;
+  --color-black-1: #000000;
+  --color-black-2: #111111;
+  --color-orange: #FF8A00;
+  --color-blue: #1DA5B4;
+
+  --color-gradient-background: linear-gradient(180deg, #000000 0%, #140B00 100%);
+  --color-gradient-orange-1: linear-gradient(180deg, #FFD4A0 0%, #FFA438 52.6%, #E88C1E 100%);
+  --color-gradiente-orange-2: linear-gradient(180deg, #F08200 9.3%, #A95B00 100%);
+  --color-gradient-golden: linear-gradient(90deg, #785A28 0%, #C89B3C 100%);
+  --color-gradient-blue: linear-gradient(180deg, #31969D 0%, #65E6F4 31.77%, #24AEBD 66.15%, #1299A8 98.96%);
+  --color-gradient-buttons: linear-gradient(180deg, #F0E5D7 0%, #CFA958 100%);
+  --color-gradient-buttons--hover: linear-gradient(179.1deg, rgba(120, 90, 40, 0.95) 26.87%, rgba(122, 92, 42, 0.95) 48.83%, rgba(132, 102, 50, 0.95) 65.29%, rgba(148, 118, 64, 0.95) 79.01%, rgba(170, 140, 83, 0.95) 91.36%, rgba(200, 170, 110, 0.95) 103.71%);
+  --color-gradient-buttons--blue: linear-gradient(230.36deg, #31969D 9.24%, #B5F5FB 20.26%, #65E6F4 28.44%, #24AEBD 49.22%, #1299A8 69.04%);
+  --color-gradient-featured: linear-gradient(180deg, #111111 0%, rgba(0, 0, 0, 0.8) 51.6%, #9E630B 105.47%);
+
+  --color-gradient-elements: linear-gradient(180deg, #95753E 0%, #C8A765 32.81%, #D5B36D 68.23%, #9C7D42 100%);
+  --color-gradient-third: linear-gradient(180deg, #111111 0%, #262016 60.09%, #785A28 132.61%);
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Beaufort for LOL';
+    src: url('BeaufortforLOL-Regular.woff2') format('woff2'),
+        url('BeaufortforLOL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beaufort for LOL';
+    src: url('BeaufortforLOL-Bold.woff2') format('woff2'),
+        url('BeaufortforLOL-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beaufort for LOL';
+    src: url('BeaufortforLOL-Heavy.woff2') format('woff2'),
+        url('BeaufortforLOL-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beaufort for LOL';
+    src: url('BeaufortforLOL-Medium.woff2') format('woff2'),
+        url('BeaufortforLOL-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beaufort for LOL';
+    src: url('BeaufortforLOL-Light.woff2') format('woff2'),
+        url('BeaufortforLOL-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

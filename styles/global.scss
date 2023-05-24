@@ -1,0 +1,72 @@
+@import "base/reset";
+@import "base/colors";
+@import "base/fonts";
+@import "base/typography";
+@import "base/variables";
+@import "base/mixins";
+
+h1 {
+  @include heading-1;
+}
+
+h2 {
+  @include heading-2;
+}
+
+h3 {
+  @include heading-3;
+}
+
+h4 {
+  @include heading-4;
+}
+
+h5 {
+  @include heading-5;
+}
+
+h6 {
+  @include heading-6;
+}
+
+p,
+a,
+span,
+ul li {
+  @include body-2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: max-content auto;
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .header {
+    grid-row: 1;
+  }
+
+  .content-wrapper {
+    grid-row: 2;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: calc(100vh - 117px);
+    max-height: calc(100vh - 117px);
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}

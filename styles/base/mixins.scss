@@ -1,0 +1,81 @@
+@mixin breakpoint($viewport) {
+  @if type-of($viewport) == number {
+    @media screen and (min-width: $viewport) {
+      @content;
+    }
+  } @else {
+    @media screen and ($viewport) {
+      @content;
+    }
+  }
+}
+
+@mixin heading-1 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--medium);
+  font-size: var(--font-size-heading-1);
+  text-transform: uppercase;
+}
+
+@mixin heading-2 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--medium);
+  font-size: var(--font-size-heading-2);
+}
+
+@mixin heading-3 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--medium);
+  font-size: var(--font-size-heading-3);
+  line-height: 1.21;
+}
+
+@mixin heading-4 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--medium);
+  font-size: var(--font-size-heading-4);
+  line-height: 1.14;
+}
+
+@mixin heading-5 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--medium);
+  font-size: var(--font-size-heading-5);
+}
+
+@mixin heading-6 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--medium);
+  font-size: var(--font-size-heading-6);
+}
+
+@mixin heading-7 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--medium);
+  font-size: var(--font-size-heading-7);
+}
+
+@mixin body-1 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--regular);
+  font-size: var(--font-size-body-1);
+}
+
+@mixin body-2 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--regular);
+  font-size: var(--font-size-body-2);
+  line-height: 1.11;
+}
+
+@mixin body-3 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--regular);
+  font-size: var(--font-size-body-3);
+}
+
+@mixin body-4 {
+  color: var(--color-black-1);
+  font-family: var(--font-primary--bold);
+  font-size: var(--font-size-body-3);
+}

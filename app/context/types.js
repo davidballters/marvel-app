@@ -1,0 +1,3 @@
+export const GET_CHARACTERS = 'GET_CHARACTERS'
+export const SET_CHARACTER = 'SET_CHARACTER'
+export const SET_LOADING = 'SET_LOADING'

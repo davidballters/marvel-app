@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'BeaufortLOLLight';
+  src: url('/fonts/BeaufortforLOL-Light.otf') format('otf'),
+      url('/fonts/BeaufortforLOL-Light.woff2') format('woff2'),
+      url('/fonts/BeaufortforLOL-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeaufortLOLRegular';
+  src: url('/fonts/BeaufortforLOL-Regular.otf') format('otf'),
+      url('/fonts/BeaufortforLOL-Regular.woff2') format('woff2'),
+      url('/fonts/BeaufortforLOL-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeaufortLOLMedium';
+  src: url('/fonts/BeaufortforLOL-Medium.otf') format('otf'),
+      url('/fonts/BeaufortforLOL-Medium.woff2') format('woff2'),
+      url('/fonts/BeaufortforLOL-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeaufortLOLBold';
+  src: url('/fonts/BeaufortforLOL-Bold.otf') format('otf'),
+      url('/fonts/BeaufortforLOL-Bold.woff2') format('woff2'),
+      url('/fonts/BeaufortforLOL-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeaufortLOLHeavy';
+  src: url('/fonts/BeaufortforLOL-Heavy.otf') format('otf'),
+      url('/fonts/BeaufortforLOL-Heavy.woff2') format('woff2'),
+      url('/fonts/BeaufortforLOL-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-primary--italic: 'BeaufortItalic';
+  --font-primary--light: 'BeaufortLOLLight';
+  --font-primary--light--italic: 'BeaufortLightItalic';
+  --font-primary--regular: 'BeaufortLOLRegular';
+  --font-primary--medium: 'BeaufortLOLMedium';
+  --font-primary--medium--italic: 'BeaufortMediumItalic';
+  --font-primary--bold: 'BeaufortLOLBold';
+  --font-primary--bold--italic: 'BeaufortBoldLight';
+  --font-primary--heavy: 'BeaufortLOLHeavy';
+  --font-primary--heavy--italic: 'BeaufortHeavyItalic';
+}

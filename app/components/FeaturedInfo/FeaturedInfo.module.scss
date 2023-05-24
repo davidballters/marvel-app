@@ -1,0 +1,235 @@
+.featured_info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 22px;
+
+  .empty {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  &__progress-bar,
+  &__video,
+  &__image {
+    padding: 25px;
+    border: 1px solid var(--color-golden-4);
+    border-radius: 5px;
+    background-color: var(--color-black-2);
+
+    h3 {
+      color: var(--color-golden-1);
+      font-size: var(--font-size-heading-5);
+      line-height: 1.25;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  &__image {
+    padding: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 190px;
+    }
+  }
+
+  &__video {
+    overflow: hidden;
+    padding: 0;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__progress-bar {
+    grid-column: 1;
+
+    .progress-bar {
+      position: relative;
+      margin-top: 50px;
+      margin-bottom: 25px;
+      padding: 2px;
+      background: var(--color-gradient-golden);
+      transform: skewX(-10deg);
+
+      &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(10, auto);
+        padding: 5px;
+        background-color: var(--color-black-2);
+      }
+
+      &__percent {
+        height: 20px;
+        background-color: #D9D9D9;
+        border-top: 1px solid var(--color-black-2);
+        border-bottom: 1px solid var(--color-black-2);
+        border-left: 1px solid var(--color-black-2);
+        transition: all 0.25s ease;
+
+        &:last-child {
+          border-right: 1px solid var(--color-black-2);
+        }
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            grid-column: $i;
+          }
+        }
+      }
+
+      &.percent-10 {
+        .progress-bar__percent {
+          &:nth-child(1) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(10% - 55px);
+        }
+      }
+
+      &.percent-20 {
+        .progress-bar__percent {
+          &:nth-child(-n+2) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(20% - 55px);
+        }
+      }
+
+      &.percent-30 {
+        .progress-bar__percent {
+          &:nth-child(-n+3) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(30% - 55px);
+        }
+      }
+
+      &.percent-40 {
+        .progress-bar__percent {
+          &:nth-child(-n+4) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(40% - 55px);
+        }
+      }
+
+      &.percent-50 {
+        .progress-bar__percent {
+          &:nth-child(-n+5) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(50% - 55px);
+        }
+      }
+
+      &.percent-60 {
+        .progress-bar__percent {
+          &:nth-child(-n+6) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(60% - 55px);
+        }
+      }
+
+      &.percent-70 {
+        .progress-bar__percent {
+          &:nth-child(-n+7) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(70% - 55px);
+        }
+      }
+
+      &.percent-80 {
+        .progress-bar__percent {
+          &:nth-child(-n+8) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(80% - 55px);
+        }
+      }
+
+      &.percent-90 {
+        .progress-bar__percent {
+          &:nth-child(-n+9) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(90% - 55px);
+        }
+      }
+
+      &.percent-100 {
+        .progress-bar__percent {
+          &:nth-child(-n+10) {
+            background: var(--color-gradient-blue);
+          }
+        }
+
+        .created-productions {
+          left: calc(100% - 55px);
+        }
+      }
+
+      .goal-productions,
+      .created-productions {
+        position: absolute;
+        width: 110px;
+        font-size: var(--font-size-body-3);
+      }
+
+      .goal-productions {
+        top: calc(-100% - -8px);
+        right: 0;
+        color: var(--color-golden-3);
+        text-align: right;
+      }
+
+      .created-productions {
+        bottom: calc(-100% - -8px);
+        color: var(--color-blue);
+        transition: all 0.25s ease;
+      }
+    }
+  }
+
+  &__video {
+    grid-column: 2;
+  }
+
+  &__image {
+    grid-column: 3;
+  }
+}
