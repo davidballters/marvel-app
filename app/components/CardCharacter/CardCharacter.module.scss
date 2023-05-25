@@ -51,11 +51,14 @@
     margin: 15px 0 0;
 
     .avatar {
+      position: absolute;
       z-index: 10;
-      user-select: none;
-      width: 180px;
-      height: 180px;
+      top: 30px;
+      left: 14px;
+      width: calc(100% - 25px);
+      height: calc(100% - 65px);
       border-radius: 50%;
+      object-fit: cover;
     }
   }
 
